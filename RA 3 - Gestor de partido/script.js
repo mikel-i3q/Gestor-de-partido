@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let golesEquipo2 = 0;
     const estadoPartido = document.getElementById("estadoPartido");
 
-    // Marcador
     document.getElementById("golEquipo1").addEventListener("click", () => {
         golesEquipo1++;
         actualizarMarcador();
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         estadoPartido.textContent = `Marcador actualizado: ${golesEquipo1} - ${golesEquipo2}`;
     }
 
-    // Gestión de jugadores
     const jugadores = [];
     const formJugador = document.getElementById("formJugador");
     const listaJugadores = document.getElementById("listaJugadores");
@@ -60,4 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
             listaJugadores.appendChild(li);
         });
     }
+
 });
